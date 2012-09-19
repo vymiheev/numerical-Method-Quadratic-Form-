@@ -14,25 +14,24 @@ Aj=STEP;
 */
 
 public class EntryPoint {
-    public static double LEFT_BORDER;
-    public static double RIGHT_BORDER;
-    public static int nodesCount;
+    public static double LOWER_LIMIT;
+    public static double UPPER_LIMIT;
+    public static int N;
     public static double STEP;
+    public static double EPS;
 
     public EntryPoint() throws FileNotFoundException {
         Scanner scanner = new Scanner(new File("input"));
-        LEFT_BORDER = scanner.nextDouble();
-        RIGHT_BORDER = scanner.nextDouble();
-        nodesCount = scanner.nextInt();
-        STEP = (RIGHT_BORDER - LEFT_BORDER) / (nodesCount - 1);
-        //System.out.println(LEFT_BORDER + " " + RIGHT_BORDER + " " + nodesCount + " " + STEP);
-
+        LOWER_LIMIT = scanner.nextDouble();
+        UPPER_LIMIT = scanner.nextDouble();
+        N = scanner.nextInt();
+        EPS = scanner.nextDouble();
+        STEP = (UPPER_LIMIT - LOWER_LIMIT) / (N - 1);
     }
 
     public static void main(String[] args) throws FileNotFoundException {
-        EntryPoint initialData = new EntryPoint();
-        FunctionHandler handler = new FunctionHandler();
-        handler.run();
+        new EntryPoint();
+        new ActionHandler().run();
 
     }
 }

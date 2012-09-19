@@ -1,54 +1,59 @@
-public class GaussMethod implements Runnable {
-    private int n = FunctionHandler.matrixB.length;
-    public double[] matrixU = new double[n];
+/*
+* solving system of algebraic equations by Gauss method:
+* Ax=b
+* a ~ coefficientMatrixU
+* x ~ matrixU
+* b ~ fx
+*/
+public class GaussMethod {
+    final int N;
+    public double[] matrixU;
 
-    @Override
-    public void run() {
-        for (int i = 0; i < n - 1; i++) {
-            if (FunctionHandler.matrixB[i][i] == 0) {
-                chooseColMainEl(i);
-            }
-            for (int k = i + 1; k < n; k++) {
-                double p = FunctionHandler.matrixB[k][i] / FunctionHandler.matrixB[i][i];
-                for (int j = i + 1; j < n; j++) {
-                    FunctionHandler.matrixB[k][j] -= p * FunctionHandler.matrixB[i][j];
-                }
-                FunctionHandler.fx[k] -= p * FunctionHandler.fx[i];
-            }
-        }
-        for (int i = n - 1; i >= 0; i--) {
-            double s = 0;
-            for (int j = i + 1; j < n; j++) {
-                s += FunctionHandler.matrixB[i][j] * matrixU[j];
-            }
-            matrixU[i] = (FunctionHandler.fx[i] - s) / FunctionHandler.matrixB[i][i];
-        }
-        printMatrixU();
+    public GaussMethod() {
+        this.N= 1 + (int) ((EntryPoint.UPPER_LIMIT - EntryPoint.LOWER_LIMIT) / EntryPoint.STEP);
+        matrixU=new double[N];
     }
 
-    private void printMatrixU() {
-        for (int i = 0; i < matrixU.length; i++) {
-            System.out.println(matrixU[i]);
+    public double[] solveSystemLinearAlgebraicEquations() {
+        for (int i = 0; i < N - 1; i++) {
+            if (QuadratureMethod.coefficientMatrixU[i][i] == 0) {
+                chooseColMainEl(i);
+            }
+            for (int k = i + 1; k < N; k++) {
+                double p = QuadratureMethod.coefficientMatrixU[k][i] / QuadratureMethod.coefficientMatrixU[i][i];
+                for (int j = i; j < N; j++) {
+                    QuadratureMethod.coefficientMatrixU[k][j] -= p * QuadratureMethod.coefficientMatrixU[i][j];
+                }
+                QuadratureMethod.fx[k] -= p * QuadratureMethod.fx[i];
+            }
         }
+        for (int i = N - 1; i >= 0; i--) {
+            double s = 0;
+            for (int j = i + 1; j < N; j++) {
+                s += QuadratureMethod.coefficientMatrixU[i][j] * matrixU[j];
+            }
+            matrixU[i] = (QuadratureMethod.fx[i] - s) / QuadratureMethod.coefficientMatrixU[i][i];
+        }
+        return matrixU;
     }
 
 
     private void chooseColMainEl(int i) {
         int k = i;
-        for (int m = i + 1; m < n; m++) {
-            if (Math.abs(FunctionHandler.matrixB[m][i]) > Math.abs(FunctionHandler.matrixB[k][i])) {
+        for (int m = i + 1; m < N; m++) {
+            if (Math.abs(QuadratureMethod.coefficientMatrixU[m][i]) > Math.abs(QuadratureMethod.coefficientMatrixU[k][i])) {
                 k = m;
             }
         }
         if (k != i) {
-            for (int j = i; j < n; j++) {
-                double box = FunctionHandler.matrixB[i][j];
-                FunctionHandler.matrixB[i][j] = FunctionHandler.matrixB[k][j];
-                FunctionHandler.matrixB[k][j] = box;
+            for (int j = i; j < N; j++) {
+                double box = QuadratureMethod.coefficientMatrixU[i][j];
+                QuadratureMethod.coefficientMatrixU[i][j] = QuadratureMethod.coefficientMatrixU[k][j];
+                QuadratureMethod.coefficientMatrixU[k][j] = box;
             }
-            double box = FunctionHandler.fx[i];
-            FunctionHandler.fx[i] = FunctionHandler.fx[k];
-            FunctionHandler.fx[k] = box;
+            double box = QuadratureMethod.fx[i];
+            QuadratureMethod.fx[i] = QuadratureMethod.fx[k];
+            QuadratureMethod.fx[k] = box;
         }
     }
 }
