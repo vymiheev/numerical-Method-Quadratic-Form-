@@ -15,20 +15,25 @@ public class RungeRule {
     private final int STEP_DIVIDER = 2;
     private final int M;
     private final double D;
+    private int it = 0;
 
     public double[] runRungeRule() {
         double[] IH = new QuadratureMethod().getApproximateSolution();
         while (true) {
-
             EntryPoint.STEP /= STEP_DIVIDER;
             double[] Ih = new QuadratureMethod().getApproximateSolution();
             /*findMaxDifference(Ih, IH);
             if (findDifference(Ih, IH) < EntryPoint.EPS) {
                 return IH;
             }*/
+
             if (findMaxDifference(Ih, IH) / D < EntryPoint.EPS) {
                 return Ih;
             }
+            /* if (it==2){
+                return Ih;
+            }
+            it++;*/
             IH = Ih.clone();
 
         }
@@ -57,7 +62,6 @@ public class RungeRule {
                 max = tempDifference;
             }
         }
-        System.out.println("\nmax difference:\n" + max);
         return max;
 
     }

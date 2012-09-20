@@ -19,7 +19,7 @@ public class ExactSolution {
     }
 
     public double[] getExactSolution() {
-        for (double x = EntryPoint.LOWER_LIMIT , i = 0; x <= EntryPoint.UPPER_LIMIT; x += EntryPoint.STEP, i++) {
+        for (double x = EntryPoint.LOWER_LIMIT + 0.5*EntryPoint.STEP, i = 0; x <= EntryPoint.UPPER_LIMIT; x += EntryPoint.STEP, i++) {
             exactSolution[((int) i)] = coefficientA + coefficientB * x;
 
         }

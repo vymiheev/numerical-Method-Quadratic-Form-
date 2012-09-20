@@ -19,7 +19,52 @@
   </component>
   <component name="DebuggerManager">
     <method_breakpoints>
-      <breakpoint url="file://$PROJECT_DIR$/src/RungeRule.java" line="18" class="RungeRule" package="">
+      <breakpoint url="file://$PROJECT_DIR$/src/RungeRule.java" line="19" class="RungeRule" package="">
+        <option name="WATCH_ENTRY" value="true" />
+        <option name="WATCH_EXIT" value="true" />
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/RungeRule.java" line="56" class="RungeRule" package="">
+        <option name="WATCH_ENTRY" value="true" />
+        <option name="WATCH_EXIT" value="true" />
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/QuadratureMethod.java" line="60" class="QuadratureMethod" package="">
+        <option name="WATCH_ENTRY" value="true" />
+        <option name="WATCH_EXIT" value="true" />
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+      <breakpoint url="file://$PROJECT_DIR$/src/QuadratureMethod.java" line="47" class="QuadratureMethod" package="">
         <option name="WATCH_ENTRY" value="true" />
         <option name="WATCH_EXIT" value="true" />
         <option name="ENABLED" value="true" />
@@ -35,6 +80,21 @@
         <option name="LOG_MESSAGE" value="" />
       </breakpoint>
     </method_breakpoints>
+    <line_breakpoints>
+      <breakpoint url="file://$PROJECT_DIR$/src/GaussMethod.java" line="36" class="GaussMethod" package="">
+        <option name="ENABLED" value="true" />
+        <option name="LOG_ENABLED" value="false" />
+        <option name="LOG_EXPRESSION_ENABLED" value="false" />
+        <option name="SUSPEND_POLICY" value="SuspendAll" />
+        <option name="COUNT_FILTER_ENABLED" value="false" />
+        <option name="COUNT_FILTER" value="0" />
+        <option name="CONDITION_ENABLED" value="false" />
+        <option name="CLASS_FILTERS_ENABLED" value="false" />
+        <option name="INSTANCE_FILTERS_ENABLED" value="false" />
+        <option name="CONDITION" value="" />
+        <option name="LOG_MESSAGE" value="" />
+      </breakpoint>
+    </line_breakpoints>
     <breakpoint_any>
       <breakpoint>
         <option name="NOTIFY_CAUGHT" value="true" />
@@ -78,7 +138,7 @@
       <file leaf-file-name="EntryPoint.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/EntryPoint.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="29" column="0" selection-start="866" selection-end="866" vertical-scroll-proportion="0.0">
+            <state line="26" column="29" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -87,7 +147,7 @@
       <file leaf-file-name="ExactSolution.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ExactSolution.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="21" column="47" selection-start="613" selection-end="613" vertical-scroll-proportion="0.0">
+            <state line="21" column="68" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -102,10 +162,10 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ActionHandler.java" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="ActionHandler.java" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/ActionHandler.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="945" selection-end="945" vertical-scroll-proportion="0.0">
+            <state line="14" column="143" selection-start="504" selection-end="504" vertical-scroll-proportion="0.2437223">
               <folding />
             </state>
           </provider>
@@ -114,17 +174,19 @@
       <file leaf-file-name="RungeRule.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/RungeRule.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="0" selection-start="813" selection-end="813" vertical-scroll-proportion="0.0">
+            <state line="64" column="0" selection-start="1878" selection-end="1878" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="QuadratureMethod.java" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="QuadratureMethod.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/QuadratureMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="46" selection-start="1318" selection-end="1318" vertical-scroll-proportion="0.18020679">
-              <folding />
+            <state line="12" column="30" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0">
+              <folding>
+                <element signature="e#0#2616#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,7 +194,7 @@
       <file leaf-file-name="GaussMethod.java" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/GaussMethod.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="16" column="0" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0">
+            <state line="36" column="0" selection-start="1316" selection-end="1316" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -152,13 +214,13 @@
         <option value="$PROJECT_DIR$/src/Function.java" />
         <option value="$PROJECT_DIR$/src/FunctionHandler.java" />
         <option value="$PROJECT_DIR$/src/ApproximateSolution.java" />
-        <option value="$PROJECT_DIR$/src/GaussMethod.java" />
-        <option value="$PROJECT_DIR$/src/EntryPoint.java" />
-        <option value="$PROJECT_DIR$/src/ActionHandler.java" />
         <option value="$PROJECT_DIR$/input" />
-        <option value="$PROJECT_DIR$/src/RungeRule.java" />
+        <option value="$PROJECT_DIR$/src/EntryPoint.java" />
         <option value="$PROJECT_DIR$/src/ExactSolution.java" />
+        <option value="$PROJECT_DIR$/src/GaussMethod.java" />
         <option value="$PROJECT_DIR$/src/QuadratureMethod.java" />
+        <option value="$PROJECT_DIR$/src/RungeRule.java" />
+        <option value="$PROJECT_DIR$/src/ActionHandler.java" />
       </list>
     </option>
   </component>
@@ -212,30 +274,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope">
-        <subPane subId="Project Files">
-          <PATH>
-            <PATH_ELEMENT USER_OBJECT="Root">
-              <option name="myItemId" value="" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
-      <pane id="PackagesPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="methodPryamougolnika" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="RectangleMethod" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
-            </PATH_ELEMENT>
-          </PATH>
-        </subPane>
-      </pane>
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -270,6 +308,30 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <PATH>
+            <PATH_ELEMENT USER_OBJECT="Root">
+              <option name="myItemId" value="" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="methodPryamougolnika" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="RectangleMethod" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PackageViewModuleNode" />
+            </PATH_ELEMENT>
+          </PATH>
+        </subPane>
+      </pane>
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -283,9 +345,9 @@
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="MemberChooser.showClasses" value="true" />
     <property name="GoToClass.includeLibraries" value="false" />
-    <property name="options.searchVisible" value="true" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="dynamic.classpath" value="false" />
+    <property name="options.searchVisible" value="true" />
   </component>
   <component name="RunManager" selected="Application.EntryPoint">
     <configuration default="false" name="EntryPoint" type="Application" factoryName="Application" temporary="true">
@@ -464,7 +526,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="53" width="1440" height="823" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="JetGradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -559,14 +621,11 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/EntryPoint.java">
+    <entry file="file://$PROJECT_DIR$/src/GaussMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="29" column="0" selection-start="866" selection-end="866" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ExactSolution.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="21" column="47" selection-start="613" selection-end="613" vertical-scroll-proportion="0.0" />
+        <state line="36" column="0" selection-start="1316" selection-end="1316" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/input">
@@ -574,24 +633,39 @@
         <state line="0" column="21" selection-start="10" selection-end="10" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ActionHandler.java">
+    <entry file="file://$PROJECT_DIR$/src/ExactSolution.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="945" selection-end="945" vertical-scroll-proportion="0.0" />
+        <state line="21" column="68" selection-start="634" selection-end="634" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/RungeRule.java">
+    <entry file="file://$PROJECT_DIR$/src/EntryPoint.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="0" selection-start="813" selection-end="813" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/GaussMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="16" column="0" selection-start="354" selection-end="354" vertical-scroll-proportion="0.0" />
+        <state line="26" column="29" selection-start="774" selection-end="774" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/QuadratureMethod.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="46" selection-start="1318" selection-end="1318" vertical-scroll-proportion="0.18020679">
+        <state line="12" column="30" selection-start="452" selection-end="452" vertical-scroll-proportion="0.0">
+          <folding>
+            <element signature="e#0#2616#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/RungeRule.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64" column="0" selection-start="1878" selection-end="1878" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ActionHandler.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="143" selection-start="504" selection-end="504" vertical-scroll-proportion="0.2437223">
           <folding />
         </state>
       </provider>

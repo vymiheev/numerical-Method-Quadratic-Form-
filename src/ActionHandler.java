@@ -12,8 +12,7 @@ public class ActionHandler implements Runnable {
         RungeRule rungeRule = new RungeRule();
         this.approximateSolution = rungeRule.runRungeRule();
         this.N = approximateSolution.length;
-        System.out.println("N: " + N + "\ntrue size " + (int) (1+(EntryPoint.UPPER_LIMIT - EntryPoint.LOWER_LIMIT) / EntryPoint.STEP) +
-                "\nstep: " + EntryPoint.STEP + "\niteration count: " + Math.log(EntryPoint.STEP) / Math.log(1.0/2));
+        System.out.println("N: " + N + "\nstep: " + EntryPoint.STEP + "\niteration count: " + (Math.log(EntryPoint.STEP) / Math.log(1.0 / 2)-1));
         this.exactSolution = new ExactSolution(N).getExactSolution();
     }
 
@@ -26,9 +25,9 @@ public class ActionHandler implements Runnable {
         System.out.println("\nexact Solution: ");
         printSolution(exactSolution);
 
-        printApproximation(N);
+        printApproximation();
+        printMaxDiffer();
     }
-
 
     private void printSolution(double[] matrix) {
         System.out.println();
@@ -37,11 +36,23 @@ public class ActionHandler implements Runnable {
         }
     }
 
-    private void printApproximation(int N) {
+    private void printApproximation() {
         System.out.println("\nApproximation:\n ");
         for (int i = 0; i < N; i++) {
             System.out.println(Math.abs(exactSolution[i] - approximateSolution[i]));
 
         }
+    }
+
+    private void printMaxDiffer() {
+        System.out.println("\nmaxDiffer:\n");
+        double maxDiffer = Math.abs(exactSolution[0] - approximateSolution[0]);
+        for (int i = 1; i < N; i++) {
+            double tempDiffer = Math.abs(exactSolution[i] - approximateSolution[i]);
+            if (maxDiffer < tempDiffer) {
+                maxDiffer = tempDiffer;
+            }
+        }
+        System.out.println(maxDiffer);
     }
 }

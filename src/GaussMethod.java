@@ -10,8 +10,8 @@ public class GaussMethod {
     public double[] matrixU;
 
     public GaussMethod() {
-        this.N= 1 + (int) ((EntryPoint.UPPER_LIMIT - EntryPoint.LOWER_LIMIT) / EntryPoint.STEP);
-        matrixU=new double[N];
+        this.N = (int) ((EntryPoint.UPPER_LIMIT - EntryPoint.LOWER_LIMIT) / EntryPoint.STEP);
+        matrixU = new double[N];
     }
 
     public double[] solveSystemLinearAlgebraicEquations() {
